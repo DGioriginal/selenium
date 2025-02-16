@@ -1,2 +1,4 @@
 # selenium
-Python-Selenium код для новичков
+Python-Selenium и не только код для новичков
+
+  Здесь я буду собирать разный код, примеры, книги для изучения/тренировки на Python. Selenium, requests, postgresql, простые примеры, скреперы,чекеры. 
