@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Вход</h1>
+    <input type="text" id="username" placeholder="Имя">
+    <input type="password" id="password" placeholder="Пароль">
+    <p id="error" class="error"></p>
+    <button onclick="handleLogin()" id="submit_button">Войти</button>
+
+    <script>
+        function handleLogin() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const errorElement = document.getElementById("error");
+
+            if (username === "admin" && password === "1234") {
+                window.location.href = "dashboard.html";
+            } else {
+                errorElement.textContent = "Неверное имя или пароль";
+            }
+        }
+    </script>
+</body>
+</html>
